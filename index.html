@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palash Bordoloi - Portfolio & Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PB</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-title">Hi, I'm Palash Bordoloi 👋</h1>
+                <p class="hero-subtitle">Web Developer | Blogger | Tech Enthusiast</p>
+                <p class="hero-description">Building amazing web experiences with modern technologies</p>
+                <button class="cta-button" onclick="scrollToSection('projects')">View My Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating beautiful and functional websites that users enjoy.</p>
+                    <p>When I'm not coding, you can find me blogging about web development, exploring new technologies, or contributing to open-source projects.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Project One</h3>
+                    <p>A modern web application built with HTML, CSS, and JavaScript with real-time features.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Project Two</h3>
+                    <p>An interactive dashboard with real-time data updates and responsive design.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                        <span>Real-time</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Project Three</h3>
+                    <p>A portfolio website showcase with smooth animations and interactive elements.</p>
+                    <div class="project-tags">
+                        <span>CSS Animations</span>
+                        <span>Interactive</span>
+                        <span>Portfolio</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-posts" id="blog-posts">
+                <!-- Blog posts will be loaded here dynamically -->
+            </div>
+            <button class="load-more-btn" onclick="loadMorePosts()">Load More Posts</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out to me for any inquiries or collaborations</p>
+            <form class="contact-form" id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Palash Bordoloi. All rights reserved.</p>
+            <p id="real-time-update" class="real-time-update"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
